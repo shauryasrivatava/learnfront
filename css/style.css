@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #007AF3
+}
+body{
+    background-color: #F2F2F2;
+    margin: 0;
+    font-family: Poppins;
+}
+.navbar{
+    background-color: white;
+    padding: 1em;
+    
+    
+}
+.navbar > .container > .logo{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1em*;
+}
+.navbar > .container > .logo > span {
+    color: var(--primary-color);
+}
+.navbar > .container > nav{
+    display: none;
+}
+.navbar >.container{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar > .container > .mobile-menu{
+    cursor: pointer;
+}
+a{
+    color:#444444;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+
+ section{
+     padding: 5em 2em;
+ }
+
+ .hero{
+     text-align: center;
+ }
+ .subhead{
+    text-transform:uppercase;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: .1em;
+ }
+ .hero > .container > .left-col > h1{
+     font-size: 2.5em;
+     line-height: 1.3em;
+     margin-top: .2em;
+ }
+.primary-cta{
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-block;
+}
+.watch-vedio-cta{
+    display: block;
+    margin-top: 1em;
+}
+.hero > .container > .left-col > .hero-cta > .watch-vedio-cta > img{
+    margin-right: .5em;
+}
+.hero-img{
+    width: 70%;
+    margin-top: 3em;
+}
+
+section.features-section{
+    background-color: black;
+    color: white;
+}
+.features-list{
+    margin: 0;
+    padding-left: .1em;
+}
+.features-list > li::before{
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    position: relative;
+}
+.features-list > li::after{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    background-image: url('../images/bullet.svg');
+    background-size: contain;
+    margin-right: .5em;
+}
+.features-section > .container > img{
+    display: none;
+}
